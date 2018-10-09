@@ -1,0 +1,10 @@
+<h1> Welcome to the Pretty Purple Puppy adoption website!</h1>
+<a href="/new">Click Here To List A Puppy</a>
+
+
+<h2>Current available for adoption puppies:</h2><br>
+<% Puppy.all.each do |puppy|%>
+Name: <%= puppy.name %><br>
+Age: <%= puppy.age %><br>
+Breed: <%= puppy.breed %><br><br>
+<% end %>
